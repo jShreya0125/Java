@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample 400 Line HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        table th {
+            background-color: #333;
+            color: white;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Sample Page</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Home Section</h2>
+    <p>This is the home section of the page. It contains a brief introduction to the website.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed risus urna. In varius orci a feugiat placerat.</p>
+</section>
+
+<section id="about">
+    <h2>About Section</h2>
+    <p>This is the about section. Here, you can learn more about the website, the creators, and the purpose of the page.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra, nulla sit amet venenatis pharetra, lorem lorem hendrerit libero.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <p>We offer a variety of services that cater to different needs. Check out the list below:</p>
+    <ul>
+        <li>Web Design</li>
+        <li>SEO Optimization</li>
+        <li>Content Creation</li>
+        <li>Social Media Management</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us using the form below.</p>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section>
+    <h2>Our Team</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>CEO</td>
+            <td>johndoe@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>Lead Developer</td>
+            <td>janesmith@example.com</td>
+        </tr>
+        <tr>
+            <td>Mary Johnson</td>
+            <td>Designer</td>
+            <td>maryjohnson@example.com</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Image Gallery</h2>
+    <p>Here are some images showcasing our work:</p>
+    <div>
+        <img src="https://via.placeholder.com/300" alt="Image 1" style="width: 100%; max-width: 300px;">
+        <img src="https://via.placeholder.com/300" alt="Image 2" style="width: 100%; max-width: 300px;">
+        <img src="https://via.placeholder.com/300" alt="Image 3" style="width: 100%; max-width: 300px;">
+    </div>
+</section>
+
+<section>
+    <h2>Feedback</h2>
+    <p>We would love to hear your feedback! Please rate your experience with us:</p>
+    <form>
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating">
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+
+<section>
+    <h2>News and Updates</h2>
+    <p>Stay updated with the latest news and announcements:</p>
+    <ul>
+        <li>New service launch: SEO Optimization</li>
+        <li>Upcoming webinar: Digital Marketing Trends</li>
+        <li>Seasonal offer: 20% off on all services</li>
+    </ul>
+</section>
+
+<section>
+    <h2>FAQ</h2>
+    <p>Here are some frequently asked questions:</p>
+    <dl>
+        <dt>What services do you offer?</dt>
+        <dd>We offer web design, SEO optimization, and content creation, among others.</dd>
+
+        <dt>How can I contact you?</dt>
+        <dd>You can reach us via the contact form or by email at info@example.com.</dd>
+
+        <dt>Do you provide ongoing support?</dt>
+        <dd>Yes, we provide ongoing support for our services, including updates and troubleshooting.</dd>
+    </dl>
+</section>
+
+<footer>
+    <p>&copy; 2024 Sample Website | All rights reserved.</p>
+</footer>
+
+</body>
+</html>
